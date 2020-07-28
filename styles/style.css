@@ -7,7 +7,21 @@ body {
     --color4: #eec0c6ff;
     --color5: #e58c8aff;
     --color6: #fff8e7;
-    
+
+    /* 
+
+    Accent colors 
+    39c3ef dark blue
+
+    E58c8a dark pink
+
+    Ffbd59 dark yellow
+
+    2bb673 dark green 
+
+    8c52ff dark purple  */
+
+
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
@@ -37,6 +51,21 @@ h1 {
     font-size: 48px;
 }
 
+nav {
+    margin: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+a:hover {
+    color: var(--color5);
+}
+
 p {
     font-family: 'Rowdies', cursive;
     display: flex;
@@ -49,6 +78,7 @@ main {
     background-color: white;
     width: 70vw;
     min-width: min-content;
+    border-radius: 5px;
 }
 
 form {
@@ -58,7 +88,10 @@ form {
     align-items: center;
     margin: 30px;
     padding: 20px;
-    border: 2px slateblue solid;
+}
+
+img {
+    height: 200px;
 }
 
 .user-info-divs {
@@ -66,32 +99,24 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px greenyellow solid;
+    padding-top: 20px;
 }
 
 .pack-div { 
     display: none;
 }
 
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: var(--color5);
+}
+
 input:checked + img {
     border: solid 5px black;
+    border-radius: 5px;
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
