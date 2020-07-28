@@ -51,6 +51,21 @@ h1 {
     font-size: 48px;
 }
 
+nav {
+    margin: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+a:hover {
+    color: var(--color5);
+}
+
 p {
     font-family: 'Rowdies', cursive;
     display: flex;
@@ -73,6 +88,10 @@ form {
     align-items: center;
     margin: 30px;
     padding: 20px;
+}
+
+img {
+    height: 200px;
 }
 
 .user-info-divs {
@@ -101,22 +120,3 @@ input:checked + img {
     border: solid 5px black;
     border-radius: 5px;
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
