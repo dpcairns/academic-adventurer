@@ -21,7 +21,7 @@ export function renderAdventure(adventureData) {
     input.value = adventureData.id;
     input.name = 'adventure-choice';
     input.classList.add('pack-div');
-    
+
     const a = document.createElement('a');
     a.href = '/3-game-page/?id=' + adventureData.id;
 

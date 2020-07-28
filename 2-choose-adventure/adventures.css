@@ -1,0 +1,30 @@
+
+h1 {
+    font-family: 'Rowdies', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    text-align: center;
+}
+
+main {
+
+
+}
+
+section {
+    width: 70vw;
+    min-width: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
