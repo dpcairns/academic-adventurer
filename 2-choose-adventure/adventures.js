@@ -6,6 +6,9 @@ import { renderAdventure } from './adventureUtils.js';
 // initialize state
 const main = document.querySelector('main');
 // const letsPlayButton = document.querySelector('button');
+/*const params = new URLSearchParams(window.location.search);
+const adventureId = params.get('id');
+const adventuresData = findById(adventureData, adventureId); */
 
             //let completedAdventures = 0;
             //const param = new URLSearchParams(window.location.search);

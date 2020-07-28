@@ -15,5 +15,5 @@ form.addEventListener('submit', (event) => {
 
     saveToLocalStorage('USER', newUser);
 
-    window.location = '../2-choose-adventure/adventures.html';
+    window.location = '../2-choose-adventure/index.html';
 });
