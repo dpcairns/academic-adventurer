@@ -23,7 +23,7 @@ export function renderAdventure(adventureData) {
     input.classList.add('pack-div');
     
     const a = document.createElement('a');
-    a.href = '/quest/?id=' + adventureData.id;
+    a.href = '/3-game-page/?id=' + adventureData.id;
 
     label.append(a);
     const image = document.createElement('img');
