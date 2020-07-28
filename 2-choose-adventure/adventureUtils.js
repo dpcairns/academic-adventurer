@@ -12,7 +12,7 @@ export function findById(array, id){
     }
 }
 
-export function renderAdventure(){
+export function renderAdventure(adventureData){
     const section = document.createElement('section');
 
     const label = document.createElement('label');
@@ -23,7 +23,7 @@ export function renderAdventure(){
     input.classList.add('pack-div');
     
     const image = document.createElement('img');
-    image.src = 'http://www.placekitten.com/200/200';
+    image.src = adventureData.image;
     
     label.append(input, image);
 
