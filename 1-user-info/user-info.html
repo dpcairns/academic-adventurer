@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rowdies:wght@700&display=swap"
+        rel="stylesheet">
+
     <title>Create-Account</title>
 </head>
 
 <body>
     <header>
-        <h1>Create Account</h1>
+        <h1>Pick your Pack!</h1>
         <p>Please fill in your name and choose your pack</p>
     </header>
     <main>
@@ -24,26 +29,22 @@
         <section>
             <form id="user-info">
                 <label>
-                    Red
                     <input class="pack-div" type="radio" name="back-pack" value="red">
                     <img src="../assets/red.png">
                 </label>
                 <label>
-                    Yellow
                     <input class="pack-div" type="radio" name="back-pack" value="yellow">
                     <img src="../assets/yellow.png">
                 </label>
                 <label>
-                    Blue
                     <input class="pack-div" type="radio" name="back-pack" value="blue">
                     <img src="../assets/blue.png">
                 </label>
                 <label>
-                    Green
                     <input class="pack-div" type="radio" name="back-pack" value="green">
                     <img src="../assets/green.png">
                 </label>
-                <label>
+                <label id="user-label">
                     Name
                     <input type="text" name="user-name" />
                 </label>
@@ -52,9 +53,6 @@
 
         </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
 
     <script type="module" src="./user-info.js"></script>
 </body>
