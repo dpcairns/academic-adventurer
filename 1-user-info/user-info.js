@@ -14,4 +14,6 @@ form.addEventListener('submit', (event) => {
     const newUser = makeUser(formData);
 
     saveToLocalStorage('USER', newUser);
+
+    window.location = '../2-choose-adventure/adventures.html';
 });

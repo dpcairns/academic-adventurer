@@ -12,7 +12,7 @@ const adventure1 = {
    
     },
    
-    image: 'image here',
+    image: 'http://www.placekitten.com/200/200',
    
     description: `
    
