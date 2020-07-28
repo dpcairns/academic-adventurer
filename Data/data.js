@@ -2,7 +2,7 @@ const adventure1 = {
     id: 'adventure1',
     title: 'Adventure 1',
     image: '../assets/adventure1.png',
-    background: 'http://www.placecage.com/900/600',
+    background: '../assets/background1.png',
     description: `
            Review the letters below. When you are ready, click the "Let's Play" button at the bottom of the page to navigate to the game page. Happy studying! :) `,
     letterChoices: [{
@@ -42,7 +42,7 @@ const adventure2 = {
     id: 'adventure2',
     title: 'Adventure 2',
     image: '../assets/adventure2.png',
-    background: 'http://www.placecage.com/400/400',
+    background: '../assets/background2.png',
     description: `
            Review the letters below. When you are ready, click the "Let's Play" button at the bottom of the page to navigate to the game page. Happy studying! :) `,
     letterChoices: [{
@@ -82,7 +82,7 @@ const adventure3 = {
     id: 'adventure3',
     title: 'Adventure 3',
     image: '../assets/adventure3.png',
-    background: 'http://www.placecage.com/900/600',
+    background: '../assets/background3.png',
     description: `
            Review the letters below. When you are ready, click the "Let's Play" button at the bottom of the page to navigate to the game page. Happy studying! :) `,
     letterChoices: [{
@@ -122,7 +122,7 @@ const adventure4 = {
     id: 'adventure4',
     title: 'Adventure 4',
     image: '../assets/adventure4.png',
-    background: 'http://www.placecage.com/800/600',
+    background: '../assets/background4.png',
     description: `
            Review the letters below. When you are ready, click the "Let's Play" button at the bottom of the page to navigate to the game page. Happy studying! :) `,
     letterChoices: [{
@@ -162,7 +162,7 @@ const adventure5 = {
     id: 'adventure5',
     title: 'Adventure 5',
     image: '../assets/adventure5.png',
-    background: 'http://www.placekitten.com/400/400',
+    background: '../assets/background5.png',
     description: `
            Review the letters below. When you are ready, click the "Let's Play" button at the bottom of the page to navigate to the game page. Happy studying! :) `,
     letterChoices: [{
