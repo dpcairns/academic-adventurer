@@ -21,14 +21,20 @@ export function renderAdventure(adventureData) {
     input.value = adventureData.id;
     input.name = 'adventure-choice';
     input.classList.add('pack-div');
+    
+    const a = document.createElement('a');
+    a.href = '/quest/?id=' + adventureData.id;
 
-
-
-
+    label.append(a);
     const image = document.createElement('img');
     image.src = adventureData.image;
+    a.append(image);
 
-    label.append(input, image);
+
+
+
+
+    label.append(input);
 
     section.append(label);
     return section;
