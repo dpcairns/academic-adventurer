@@ -15,7 +15,7 @@ test('renderAdventure', (expect) => {
     const actual = renderAdventure(adventure1);
     //Act 
     // Call the function you're testing and set the result to a const
-    const expected = `<section><label><a href="/quest/?id=adventure1"><img src="../assets/blue.png"></a><input type="radio" value="adventure1" name="adventure-choice" class="pack-div"></label></section>`;
+    const expected = `<section><label><a href="/3-game-page/?id=adventure1"><img src="../assets/blue.png"></a><input type="radio" value="adventure1" name="adventure-choice" class="pack-div"></label></section>`;
 
     //Expect
     // Make assertions about what is expected versus the actual result
