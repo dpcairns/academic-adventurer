@@ -53,7 +53,6 @@ h1 {
 
 nav {
     margin: 10px;
-    
 }
 
 a {
@@ -76,9 +75,11 @@ p {
 
 main {
     background-color: white;
-    width: 70vw;
+    width: 90vw;
     min-width: min-content;
     border-radius: 5px;
+    margin-bottom: 60px;
+    padding: 10px;
 }
 
 form {
@@ -100,6 +101,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
+    align-items: center;
 }
 
 .pack-div { 
@@ -110,6 +112,8 @@ button {
     cursor: pointer;
     border-radius: 5px;
     margin-left: 5px;
+    height: 1.8rem;
+    width: 4rem;
 }
 
 button:hover {
