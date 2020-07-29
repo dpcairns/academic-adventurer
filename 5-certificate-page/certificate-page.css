@@ -12,13 +12,15 @@ main {
 
 img {
     height: auto;
-    width: 900px;
+    width: 600px;
     justify-content: flex-end;
 }
 
-button {
-    height: min-content;
-    width: min-content;
-    display: block;
-    justify-items: start;
+#completed-letters {
+    z-index: 1;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 36px;
+    position: relative;
+    bottom: 400px;
+    right: 150px;
 }
