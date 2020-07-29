@@ -58,6 +58,7 @@ nav {
     justify-content: center;
     align-items: center;
     display: flex;
+    font-size: 18px;
 }
 
 a {
