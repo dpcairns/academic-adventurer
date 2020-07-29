@@ -34,3 +34,10 @@ img {
 #find-letter-prompt {
     font-size: 28px;
 }
+input {
+    display: none;
+}
+input:checked + img {
+    border: solid 5px black;
+    border-radius: 5px;
+}
