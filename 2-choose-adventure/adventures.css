@@ -8,13 +8,8 @@ h1 {
     text-align: center;
 }
 
-main {
-
-
-}
-
 section {
-    width: 70vw;
+    width: 90vw;
     min-width: min-content;
     display: flex;
     justify-content: center;
@@ -25,6 +20,7 @@ section {
 label {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }

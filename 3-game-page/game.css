@@ -1,0 +1,25 @@
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80vw;
+    height: auto;
+    z-index: 0;
+}
+
+#game-prompt {
+    z-index: 1;
+    position: absolute;
+    top: 105%;
+    border: 3px solid red;
+    width: 70vw;
+}
+
+button {
+    justify-content: flex-end;
+}
+
