@@ -5,15 +5,6 @@ import { renderAdventure } from './adventureUtils.js';
 
 // initialize state
 const main = document.querySelector('main');
-// const letsPlayButton = document.querySelector('button');
-/*const params = new URLSearchParams(window.location.search);
-const adventureId = params.get('id');
-const adventuresData = findById(adventureData, adventureId); */
-
-            //let completedAdventures = 0;
-            //const param = new URLSearchParams(window.location.search);
-
-            // const user = getFromLocalStorage('USER');
 
 
 for (let i = 0; i < adventureData.length; i++) {
@@ -26,27 +17,4 @@ for (let i = 0; i < adventureData.length; i++) {
 
 
 
-            // adventureRadioTags.forEach((adventureTag, i) => {
-            //     if (i === 0) {
-            //         adventureTag.value = adventureData[i];
-            //     } else if (i === 1); {
-            //         adventureTag.value = adventureData[i];
-            //     }
-            //     console.log(adventureTag);
-            // });
-
-            // adventureRadioTags.forEach((adventureTag) => {
-            //     adventureTag.addEventListener('click', e => {
-            //         const userChoice = e.target.value;
-            //         console.log(e.target.value);
-            //         return userChoice;
-            //     });
-            // });
-
-// letsPlayButton.addEventListener('click', ()=>{
-//     const adventureRadioTags = document.querySelector('input:checked');
-//     const adventure = adventureRadioTags.value;
-
-//     const param = new URLSearchParams(window.location.search);
-// });
-
+       
