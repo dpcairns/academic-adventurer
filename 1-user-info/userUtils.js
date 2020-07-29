@@ -2,7 +2,7 @@ export function makeUser(formData) {
     return {
         name: formData.get('user-name'),
         pack: formData.get('back-pack'),
-        completed: {}
+        completed: []
     };
 }
 
