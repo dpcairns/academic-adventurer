@@ -4,17 +4,33 @@ export function findById(adventureData, id) {
 }
 
 export function renderLetters(letterChoices){
+    
+
+    
+
     const imageDiv = document.createElement('div');
     for (let i = 0; i < letterChoices.length; i++) {
         const letter = letterChoices[i];
+        const label = document.createElement('label');
+        label.classList.add('letter-labels');
+        const inputButton = document.createElement('input');
+        inputButton.type = 'radio';
+        inputButton.name = 'letter-select';
+        inputButton.value = letter.id;
+        label.appendChild(inputButton);
         const imgtag = document.createElement('img');
         imgtag.classList.add('letter-tiles');
         imgtag.src = letter.image;
+        
+        
+
          
 
         
         
-        imageDiv.append(imgtag);
+        label.appendChild(imgtag);
+        imageDiv.append(label);
+        
     }
     return imageDiv;
 }
