@@ -13,7 +13,7 @@ main {
     z-index: 1;
     position: relative;
     bottom: 400px;
-    left: 250px;
+    left: 200px;
 }
 
 img {
@@ -23,14 +23,22 @@ img {
 }
 
 #game-prompt {
+    background-color: rgba(254, 255, 254, 0.587);
     z-index: 1;
     position: absolute;
+    padding-bottom: 20px;
     top: 650px;
-    border: 3px solid red;
     width: 900px;
-    max-height: 80vw;
+    max-height: 80vh;
 }
 
 #find-letter-prompt {
     font-size: 28px;
+}
+input {
+    display: none;
+}
+input:checked + img {
+    border: solid 5px black;
+    border-radius: 5px;
 }
