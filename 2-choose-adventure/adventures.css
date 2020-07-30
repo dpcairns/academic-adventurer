@@ -21,10 +21,10 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
-a:visited {
-    pointer-events: none; 
-    cursor: default; 
+input {
+    flex-direction: column;
+   
 }
+
