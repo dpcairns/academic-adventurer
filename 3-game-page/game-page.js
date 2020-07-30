@@ -32,14 +32,14 @@ radioTags.forEach((radioTag) => {
     radioTag.addEventListener('click', (e) => {
         const userChoice = e.target.value;
         if (userChoice === correctLetter) {
-            alert('you won');
+            alert('Good job!');
             const storage = getFromLocalStorage('USER');
             storage.completed.push(adventureId);
             saveToLocalStorage('USER', storage);
 
             window.location = '../2-choose-adventure/index.html';
         } else {
-            alert('please try again');
+            alert('Please try again.');
         }
     });
 });
