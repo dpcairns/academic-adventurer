@@ -1,3 +1,5 @@
+
+
 export function findById(adventureData, id) {
     return adventureData.find(i => i.id === id);
 }
@@ -45,4 +47,7 @@ export function getRandomLetter(letterchoices) {
     const randomLetter = Math.floor(Math.random() * letterchoices.length);
     return letterchoices[randomLetter];
 
+}
+export function findLetterIndex(adventureData, id) {
+    return adventureData.findIndex(i => i.id === id);
 }
