@@ -50,10 +50,12 @@ a {
 
 a:hover {
     background-color: white;
+    
 }
 
-
 a:hover:visited {
+    pointer-events: none; 
+    cursor: default; 
     background-color: var(--color5);
     pointer-events: none; 
     cursor: default; 
