@@ -3,8 +3,6 @@ import { makeUser, saveToLocalStorage } from '../1-user-info/userUtils.js';
 // import functions and grab DOM elements
 const form = document.querySelector('form');
 
-// initialize state
-
 // set event listeners to update state and DOM
 form.addEventListener('submit', (event) => {
     event.preventDefault();

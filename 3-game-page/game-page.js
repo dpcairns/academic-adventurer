@@ -15,7 +15,7 @@ const findLetter = document.getElementById('find-letter-prompt');
 
 backButton.addEventListener('click', () => {
     window.location = '/2-choose-adventure';
-    
+
 });
 main.append(sectionElement);
 
@@ -23,7 +23,7 @@ main.append(sectionElement);
 const letter = getRandomLetter(adventureData.letterChoices);
 const correctLetter = letter.id;
 const correctDescription = letter.description;
-console.log(correctLetter);
+
 description.textContent = correctDescription;
 findLetter.textContent = `Find the letter ${correctLetter}`;
 
@@ -41,8 +41,5 @@ radioTags.forEach((radioTag) => {
         } else {
             alert('please try again');
         }
-        console.log(userChoice);
     });
-    
-
 });

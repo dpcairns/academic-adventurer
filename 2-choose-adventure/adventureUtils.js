@@ -1,9 +1,3 @@
-// import { adventure1 } from '../Data/data.js';
-
-// import { adventureData } from '../Data/data.js';
-
-import { getFromLocalStorage } from '../1-user-info/userUtils.js';
-
 export function findById(array, id) {
     let adventureMatch = [];
     for (let i = 0; i < array.length; i++) {

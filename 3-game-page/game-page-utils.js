@@ -1,5 +1,3 @@
-import adventureData from '../Data/data.js';
-
 export function findById(adventureData, id) {
     return adventureData.find(i => i.id === id);
 }
