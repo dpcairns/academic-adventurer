@@ -10,7 +10,12 @@ const completedStorage = localStorage.completed;
 
 for (let i = 0; i < adventureData.length; i++) {
     const adventure = adventureData[i];
-    if (completedStorage[adventure.id]) {
+
+    if (completedStorage.length === adventureData.length) {
+        window.location = '../5-certificate-page/index.html';
+
+        console.log('hi');
+    } else if (completedStorage[i] === adventure.id) {
         const completedElement = completedAdventure(adventure);
 
         main.appendChild(completedElement);
