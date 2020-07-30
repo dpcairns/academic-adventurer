@@ -15,54 +15,52 @@ export function findById(array, id) {
 }
 
 export function renderAdventure(adventureData) {
-    const localStorage = getFromLocalStorage('USER');
-    const completed = localStorage.completed;
+    const section = document.createElement('section');
 
-    if (completed[0] === adventureData.id) {
-        const section = document.createElement('section');
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.value = adventureData.id;
+    input.name = 'adventure-choice';
+    input.classList.add('pack-div');
 
-        const label = document.createElement('label');
-        const input = document.createElement('input');
-        input.type = 'radio';
-        input.value = adventureData.id;
-        input.name = 'adventure-choice';
-        input.classList.add('pack-div');
+    const a = document.createElement('a');
+    a.href = '/3-game-page/?id=' + adventureData.id;
 
-        const a = document.createElement('a');
-
-        label.append(a);
-        const image = document.createElement('img');
-        image.src = adventureData.image;
-        a.append(image);
+    label.append(a);
+    const image = document.createElement('img');
+    image.src = adventureData.image;
+    a.append(image);
 
 
-        label.append(input);
+    label.append(input);
 
-        section.append(label);
-        return section;
-    } else {
-        const section = document.createElement('section');
+    section.append(label);
 
-        const label = document.createElement('label');
-        const input = document.createElement('input');
-        input.type = 'radio';
-        input.value = adventureData.id;
-        input.name = 'adventure-choice';
-        input.classList.add('pack-div');
+    return section;
+}
 
-        const a = document.createElement('a');
-        a.href = '/3-game-page/?id=' + adventureData.id;
+export function completedAdventure(adventureData) {
+    const section = document.createElement('section');
 
-        label.append(a);
-        const image = document.createElement('img');
-        image.src = adventureData.image;
-        a.append(image);
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.value = adventureData.id;
+    input.name = 'adventure-choice';
+    input.classList.add('pack-div');
+
+    const a = document.createElement('a');
+
+    label.append(a);
+    const image = document.createElement('img');
+    image.src = adventureData.image;
+    a.append(image);
 
 
-        label.append(input);
+    label.append(input);
 
-        section.append(label);
-        return section;
+    section.append(label);
 
-    }
+    return section;
 }
