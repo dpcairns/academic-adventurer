@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 import { renderAdventure } from '../2-choose-adventure/adventureUtils.js';
-// import adventureData from '../Data/data.js';
-import { findById } from '../3-game-page/game-page-utils.js';
+import adventureData from '../Data/data.js';
+import { findById, renderLetters } from '../3-game-page/game-page-utils.js';
 
 const test = QUnit.test;
 
@@ -85,4 +85,18 @@ test('tests if the function searches an array and returns find the first value t
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual1, expectedLetter1);
     expect.deepEqual(actual2, expectedLetter2);
+});
+
+test('tests if the function renders a group of letters to page', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = `<div><label class="letter-labels"><input type="radio" name="letter-select" value="A"><img class="letter-tiles" src="../assets/data-letters/A.png"></label><label class="letter-labels"><input type="radio" name="letter-select" value="B"><img class="letter-tiles" src="../assets/data-letters/B.png"></label><label class="letter-labels"><input type="radio" name="letter-select" value="C"><img class="letter-tiles" src="../assets/data-letters/C.png"></label><label class="letter-labels"><input type="radio" name="letter-select" value="D"><img class="letter-tiles" src="../assets/data-letters/D.png"></label><label class="letter-labels"><input type="radio" name="letter-select" value="E"><img class="letter-tiles" src="../assets/data-letters/E.png"></label></div>`;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = renderLetters(adventureData[0].letterChoices);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual.outerHTML, expected);
 });
