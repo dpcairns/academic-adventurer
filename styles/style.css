@@ -8,20 +8,6 @@ body {
     --color5: #e58c8aff;
     --color6: #f5edda;
 
-    /* 
-
-    Accent colors 
-    39c3ef dark blue
-
-    E58c8a dark pink
-
-    Ffbd59 dark yellow
-
-    2bb673 dark green 
-
-    8c52ff dark purple  */
-
-
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
@@ -68,6 +54,13 @@ a {
 }
 
 a:hover {
+    background-color: white;
+    
+}
+
+a:hover:visited {
+    pointer-events: none; 
+    cursor: default; 
     background-color: var(--color5);
 }
 
@@ -110,10 +103,6 @@ img {
     align-items: center;
 }
 
-.pack-div { 
-    display: none;
-}
-
 button {
     cursor: pointer;
     border-radius: 5px;
@@ -129,4 +118,8 @@ button:hover {
 input:checked + img {
     border: solid 5px black;
     border-radius: 5px;
+}
+
+.pack-div { 
+    display: none;
 }

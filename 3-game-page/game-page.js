@@ -40,6 +40,7 @@ radioTags.forEach((radioTag) => {
     radioTag.addEventListener('click', (e) => {
         const userChoice = e.target.value;
         if (userChoice === correctLetter) {
+
             alert(`Good job! You clicked on the letter ${correctLetter}`);
             gameRounds++;
             letterStuff.splice(letterIndex, 1);
@@ -59,6 +60,8 @@ radioTags.forEach((radioTag) => {
         }
 
         if (gameRounds === numberOfRounds) {
+
+
             const storage = getFromLocalStorage('USER');
             storage.completed.push(adventureId);
             saveToLocalStorage('USER', storage);

@@ -26,7 +26,6 @@ export function renderAdventure(adventureData) {
     image.src = adventureData.image;
     a.append(image);
 
-
     label.append(input);
 
     section.append(label);
@@ -43,6 +42,7 @@ export function completedAdventure(adventureData) {
     input.value = adventureData.id;
     input.name = 'adventure-choice';
     input.classList.add('pack-div');
+    label.style.opacity = '0.5';
 
     const a = document.createElement('a');
 
@@ -50,7 +50,6 @@ export function completedAdventure(adventureData) {
     const image = document.createElement('img');
     image.src = adventureData.image;
     a.append(image);
-
 
     label.append(input);
 
