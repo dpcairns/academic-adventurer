@@ -18,5 +18,4 @@ p.textContent = `Congrats ${userAdventureStats.name}!`;
 const completedDiv = document.createElement('div');
 completedDiv.textContent = `You successfully completed Adventures 1, 2, 3, 4, & 5. You know your A, B, C's!`;
 
-//p.append(completedDiv);
 section.append(p, completedDiv);
