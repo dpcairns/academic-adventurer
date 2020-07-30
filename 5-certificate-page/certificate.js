@@ -1,5 +1,4 @@
 // import functions and grab DOM elements
-import adventureData from '../Data/data.js';
 
 import { getFromLocalStorage } from '../1-user-info/userUtils.js';
 // initialize state
