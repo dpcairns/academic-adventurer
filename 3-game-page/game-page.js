@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 import { saveToLocalStorage, getFromLocalStorage } from '../1-user-info/userUtils.js';
 import adventuresData from '../Data/data.js';
-import { renderGame, findById, getRandomLetter } from './game-page-utils.js';
+import { renderGame, findById, getRandomLetter, findLetterIndex } from './game-page-utils.js';
 // initialize state
 const main = document.querySelector('main');
 const params = new URLSearchParams(window.location.search);
@@ -12,6 +12,7 @@ const backButton = document.querySelector('#back-button');
 const radioTags = sectionElement.querySelectorAll('input[name="letter-select"]');
 const description = document.getElementById('description');
 const findLetter = document.getElementById('find-letter-prompt');
+const letterStuff = adventureData.letterChoices;
 
 backButton.addEventListener('click', () => {
     window.location = '/2-choose-adventure';
@@ -19,27 +20,52 @@ backButton.addEventListener('click', () => {
 });
 main.append(sectionElement);
 
-// set event listeners to update state and DOM
-const letter = getRandomLetter(adventureData.letterChoices);
-const correctLetter = letter.id;
-const correctDescription = letter.description;
+let gameRounds = 0;
+function gamePlay(letterStuff) {
+    const letter = getRandomLetter(letterStuff);
+    
+
+    return letter;
+   
+}
+//set event listeners to update state and DOM
+//const letter = getRandomLetter(adventureData.letterChoices);
+let letters = gamePlay(letterStuff);
+let correctLetter = letters.id;
+let correctDescription = letters.description; 
 
 description.textContent = correctDescription;
 findLetter.textContent = `Find the letter ${correctLetter}`;
-
+let letterIndex = findLetterIndex(letterStuff, correctLetter);
+const numberOfRounds = adventureData.letterChoices.length;
 
 radioTags.forEach((radioTag) => {
     radioTag.addEventListener('click', (e) => {
         const userChoice = e.target.value;
         if (userChoice === correctLetter) {
-            alert('you won');
+            alert(`Good job! You clicked on the letter ${correctLetter}`);
+            gameRounds++;
+            letterStuff.splice(letterIndex, 1);
+            if (letterStuff.length > 0) {
+                letters = gamePlay(letterStuff);
+            
+                correctLetter = letters.id;
+                letterIndex = findLetterIndex(letterStuff, correctLetter);
+            
+                correctDescription = letters.description; 
+                description.textContent = correctDescription;
+                findLetter.textContent = `Find the letter ${correctLetter}`;
+            }
+            
+        } else {
+            alert(`Sorry! You did not click on the letter ${correctLetter}. Please try again`);
+        }
+
+        if (gameRounds === numberOfRounds) {
             const storage = getFromLocalStorage('USER');
             storage.completed.push(adventureId);
             saveToLocalStorage('USER', storage);
-
             window.location = '../2-choose-adventure/index.html';
-        } else {
-            alert('please try again');
         }
     });
 });

@@ -226,7 +226,7 @@ const adventure5 = {
     }]
 };
 
-const adventureData = [
+const adventuresData = [
     adventure1, 
     adventure2, 
     adventure3, 
@@ -234,4 +234,4 @@ const adventureData = [
     adventure5
 ];
 
-export default adventureData;
+export default adventuresData;
