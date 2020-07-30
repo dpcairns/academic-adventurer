@@ -16,11 +16,18 @@ img {
     justify-content: flex-end;
 }
 
-#completed-letters {
+.completed-letters, div {
     z-index: 1;
     font-family: 'Patrick Hand', cursive;
-    font-size: 36px;
+    font-size: 24px;
     position: relative;
     bottom: 400px;
-    right: 150px;
+    left: 120px;
+    width: min-content;
+}
+
+div {
+    width: 250px;
+    bottom: 500px;
+    left: 320px;
 }

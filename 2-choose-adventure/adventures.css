@@ -24,3 +24,8 @@ label {
     justify-content: center;
     align-items: center;
 }
+
+a:visited {
+    pointer-events: none; 
+    cursor: default; 
+}

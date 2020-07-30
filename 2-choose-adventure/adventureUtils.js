@@ -2,6 +2,8 @@
 
 // import { adventureData } from '../Data/data.js';
 
+import { getFromLocalStorage } from '../1-user-info/userUtils.js';
+
 export function findById(array, id) {
     let adventureMatch = [];
     for (let i = 0; i < array.length; i++) {
@@ -31,13 +33,34 @@ export function renderAdventure(adventureData) {
     a.append(image);
 
 
+    label.append(input);
 
+    section.append(label);
+
+    return section;
+}
+
+export function completedAdventure(adventureData) {
+    const section = document.createElement('section');
+
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.value = adventureData.id;
+    input.name = 'adventure-choice';
+    input.classList.add('pack-div');
+
+    const a = document.createElement('a');
+
+    label.append(a);
+    const image = document.createElement('img');
+    image.src = adventureData.image;
+    a.append(image);
 
 
     label.append(input);
 
     section.append(label);
+
     return section;
-
-
 }
