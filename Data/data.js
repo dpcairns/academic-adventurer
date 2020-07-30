@@ -7,6 +7,7 @@ const adventure1 = {
            Review the letters below. When you are ready, click the "Let's Play" button at the bottom of the page to navigate to the game page. Happy studying! :) `,
     letterChoices: [{
         id: 'A',
+        audio: 'Letter A.m4a',
         number: 1,
         image: '../assets/data-letters/A.png',
         description: 'The uppercase letter A. This is the 1st letter in the English alphabet!',
@@ -14,6 +15,7 @@ const adventure1 = {
         sCoin: 1,
     }, {
         id: 'B',
+        audio: 'Letter B.m4a',
         number: 2,
         image: '../assets/data-letters/B.png',
         description: 'The uppercase letter B. This is the 2nd letter in the English alphabet!',
@@ -21,6 +23,7 @@ const adventure1 = {
         sCoin: 1,
     }, {
         id: 'C',
+        audio: 'Letter C.m4a',
         number: 3,
         image: '../assets/data-letters/C.png',
         description: 'The uppercase letter C. This is the 3rd letter in the English alphabet!',
@@ -28,6 +31,7 @@ const adventure1 = {
         sCoin: 1,
     }, {
         id: 'D',
+        audio: 'Letter D.m4a',
         number: 4,
         image: '../assets/data-letters/D.png',
         description: 'The uppercase letter D. This is the 4th letter in the English alphabet!',
@@ -35,6 +39,7 @@ const adventure1 = {
         sCoin: 1,
     }, {
         id: 'E',
+        audio: 'Letter E.m4a',
         number: 5,
         image: '../assets/data-letters/E.png',
         description: 'The uppercase letter E. This is the 5th letter in the English alphabet!',
@@ -52,6 +57,7 @@ const adventure2 = {
            Review the letters below. When you are ready, click the "Let's Play" button at the bottom of the page to navigate to the game page. Happy studying! :) `,
     letterChoices: [{
         id: 'F',
+        audio: 'Letter F.m4a',
         number: 1,
         image: '../assets/data-letters/F.png',
         description: 'The uppercase letter F. This is the 6th letter in the English alphabet!',
@@ -59,6 +65,7 @@ const adventure2 = {
         sCoin: 1,
     }, {
         id: 'G',
+        audio: 'Letter G.m4a',
         number: 2,
         image: '../assets/data-letters/G.png',
         description: 'The uppercase letter G. This is the 7th letter in the English alphabet!',
@@ -66,6 +73,7 @@ const adventure2 = {
         sCoin: 1,
     }, {
         id: 'H',
+        audio: 'Letter H.m4a',
         number: 3,
         image: '../assets/data-letters/H.png',
         description: 'The uppercase letter H. This is the 8th letter in the English alphabet!',

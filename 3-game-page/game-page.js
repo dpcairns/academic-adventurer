@@ -16,7 +16,6 @@ const letterStuff = adventureData.letterChoices;
 
 backButton.addEventListener('click', () => {
     window.location = '/2-choose-adventure';
-
 });
 main.append(sectionElement);
 
@@ -24,12 +23,10 @@ let gameRounds = 0;
 function gamePlay(letterStuff) {
     const letter = getRandomLetter(letterStuff);
     
-
-    return letter;
-   
+    return letter; 
 }
 //set event listeners to update state and DOM
-//const letter = getRandomLetter(adventureData.letterChoices);
+
 let letters = gamePlay(letterStuff);
 let correctLetter = letters.id;
 let correctDescription = letters.description; 
