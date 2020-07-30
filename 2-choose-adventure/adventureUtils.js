@@ -2,6 +2,8 @@
 
 // import { adventureData } from '../Data/data.js';
 
+import { getFromLocalStorage } from '../1-user-info/userUtils.js';
+
 export function findById(array, id) {
     let adventureMatch = [];
     for (let i = 0; i < array.length; i++) {
@@ -13,31 +15,54 @@ export function findById(array, id) {
 }
 
 export function renderAdventure(adventureData) {
-    const section = document.createElement('section');
+    const localStorage = getFromLocalStorage('USER');
+    const completed = localStorage.completed;
 
-    const label = document.createElement('label');
-    const input = document.createElement('input');
-    input.type = 'radio';
-    input.value = adventureData.id;
-    input.name = 'adventure-choice';
-    input.classList.add('pack-div');
+    if (completed[0] === adventureData.id) {
+        const section = document.createElement('section');
 
-    const a = document.createElement('a');
-    a.href = '/3-game-page/?id=' + adventureData.id;
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.value = adventureData.id;
+        input.name = 'adventure-choice';
+        input.classList.add('pack-div');
 
-    label.append(a);
-    const image = document.createElement('img');
-    image.src = adventureData.image;
-    a.append(image);
+        const a = document.createElement('a');
 
-
-
-
-
-    label.append(input);
-
-    section.append(label);
-    return section;
+        label.append(a);
+        const image = document.createElement('img');
+        image.src = adventureData.image;
+        a.append(image);
 
 
+        label.append(input);
+
+        section.append(label);
+        return section;
+    } else {
+        const section = document.createElement('section');
+
+        const label = document.createElement('label');
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.value = adventureData.id;
+        input.name = 'adventure-choice';
+        input.classList.add('pack-div');
+
+        const a = document.createElement('a');
+        a.href = '/3-game-page/?id=' + adventureData.id;
+
+        label.append(a);
+        const image = document.createElement('img');
+        image.src = adventureData.image;
+        a.append(image);
+
+
+        label.append(input);
+
+        section.append(label);
+        return section;
+
+    }
 }
