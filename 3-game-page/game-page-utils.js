@@ -1,5 +1,3 @@
-
-
 export function findById(adventureData, id) {
     return adventureData.find(i => i.id === id);
 }
@@ -15,11 +13,11 @@ export function renderLetters(letterChoices) {
         inputButton.name = 'letter-select';
         inputButton.value = letter.id;
         label.appendChild(inputButton);
-        const imgtag = document.createElement('img');
-        imgtag.classList.add('letter-tiles');
-        imgtag.src = letter.image;
+        const imgTag = document.createElement('img');
+        imgTag.classList.add('letter-tiles');
+        imgTag.src = letter.image;
 
-        label.appendChild(imgtag);
+        label.appendChild(imgTag);
         imageDiv.append(label);
 
     }
@@ -32,10 +30,10 @@ export function renderGame(adventure) {
     backImage.src = adventure.background;
     backImage.style.background;
     const div1 = document.createElement('div');
-    const letterchoices = adventure.letterChoices;
-    const letterarray = renderLetters(letterchoices);
+    const letterChoices = adventure.letterChoices;
+    const letterArray = renderLetters(letterChoices);
 
-    div1.append(letterarray);
+    div1.append(letterArray);
     containerDiv.append(backImage, div1);
 
     return containerDiv;
@@ -43,9 +41,9 @@ export function renderGame(adventure) {
 }
 
 
-export function getRandomLetter(letterchoices) {
-    const randomLetter = Math.floor(Math.random() * letterchoices.length);
-    return letterchoices[randomLetter];
+export function getRandomLetter(letterChoices) {
+    const randomLetter = Math.floor(Math.random() * letterChoices.length);
+    return letterChoices[randomLetter];
 
 }
 export function findLetterIndex(adventureData, id) {

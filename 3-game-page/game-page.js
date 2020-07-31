@@ -23,14 +23,14 @@ main.append(sectionElement);
 let gameRounds = 0;
 function gamePlay(letterStuff) {
     const letter = getRandomLetter(letterStuff);
-    
-    return letter; 
+
+    return letter;
 }
 //set event listeners to update state and DOM
 
 let letters = gamePlay(letterStuff);
 let correctLetter = letters.id;
-let correctDescription = letters.description; 
+let correctDescription = letters.description;
 
 description.textContent = correctDescription;
 findLetter.textContent = `Find the letter ${correctLetter}`;
@@ -47,16 +47,16 @@ radioTags.forEach((radioTag) => {
             letterStuff.splice(letterIndex, 1);
             if (letterStuff.length > 0) {
                 letters = gamePlay(letterStuff);
-            
+
                 correctLetter = letters.id;
                 letterIndex = findLetterIndex(letterStuff, correctLetter);
-            
-                correctDescription = letters.description; 
+
+                correctDescription = letters.description;
                 description.textContent = correctDescription;
                 findLetter.textContent = `Find the letter ${correctLetter}`;
                 audio.src = '../assets/audio-files/' + letters.audio;
             }
-            
+
         } else {
             alert(`Sorry! You did not click on the letter ${correctLetter}. Please try again`);
         }

@@ -7,11 +7,6 @@ body {
     --color4: #eec0c6ff;
     --color5: #e58c8aff;
     --color6: #f5edda;
-
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
     
     font-family: 'Patrick Hand', cursive;
     background-color: var(--color6);
@@ -62,6 +57,8 @@ a:hover:visited {
     pointer-events: none; 
     cursor: default; 
     background-color: var(--color5);
+    pointer-events: none; 
+    cursor: default; 
 }
 
 p {

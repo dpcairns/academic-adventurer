@@ -19,7 +19,7 @@ export function renderAdventure(adventureData) {
     input.classList.add('pack-div');
 
     const a = document.createElement('a');
-    a.href = '/3-game-page/?id=' + adventureData.id;
+    a.href = '../3-game-page/?id=' + adventureData.id;
 
     label.append(a);
     const image = document.createElement('img');
@@ -42,7 +42,7 @@ export function completedAdventure(adventureData) {
     input.value = adventureData.id;
     input.name = 'adventure-choice';
     input.classList.add('pack-div');
-    label.style.opacity = '0.5';
+    label.style.opacity = '0.15';
 
     const a = document.createElement('a');
 
