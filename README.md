@@ -11,7 +11,14 @@ This app aims to teach young students the English language alphabet in a fun and
 Create a less stressful assessment environment for learners to assess their knowledge. 
 
 # Semantic versioning, beginning with version 1.0.0 and incremented as changes are made
-1.0.0 MPV 
+1.0.0 MVP
+    - Create user account 
+    - Play game with one random letter per adventure 
+    - Results/certificate page 
+
+1.1.0 
+    - Add audio instructions
+    - Complete lesson with all (randomized) letters for each adventure journal
 
 # A list of any libraries, frameworks, or packages that your application requires in order to properly function. If needed, provide instructions that the user may need to follow in order to get your application up and running on their own computer.
 None
