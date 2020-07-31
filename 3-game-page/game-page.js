@@ -13,6 +13,7 @@ const radioTags = sectionElement.querySelectorAll('input[name="letter-select"]')
 const description = document.getElementById('description');
 const findLetter = document.getElementById('find-letter-prompt');
 const letterStuff = adventureData.letterChoices;
+const audio = document.getElementById('audio');
 
 backButton.addEventListener('click', () => {
     window.location = '/2-choose-adventure';
@@ -33,6 +34,7 @@ let correctDescription = letters.description;
 
 description.textContent = correctDescription;
 findLetter.textContent = `Find the letter ${correctLetter}`;
+audio.src = '../assets/audio-files/' + letters.audio;
 let letterIndex = findLetterIndex(letterStuff, correctLetter);
 const numberOfRounds = adventureData.letterChoices.length;
 
@@ -40,7 +42,6 @@ radioTags.forEach((radioTag) => {
     radioTag.addEventListener('click', (e) => {
         const userChoice = e.target.value;
         if (userChoice === correctLetter) {
-
             alert(`Good job! You clicked on the letter ${correctLetter}`);
             gameRounds++;
             letterStuff.splice(letterIndex, 1);
@@ -53,6 +54,7 @@ radioTags.forEach((radioTag) => {
                 correctDescription = letters.description;
                 description.textContent = correctDescription;
                 findLetter.textContent = `Find the letter ${correctLetter}`;
+                audio.src = '../assets/audio-files/' + letters.audio;
             }
 
         } else {
