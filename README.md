@@ -23,5 +23,8 @@ Create a less stressful assessment environment for learners to assess their know
     - fix results page alert 
     - change opacity for completed adventure books 
 
+1.1.3
+    - update game page styles
+
 ## A list of any libraries, frameworks, or packages that your application requires in order to properly function. If needed, provide instructions that the user may need to follow in order to get your application up and running on their own computer.
 None
