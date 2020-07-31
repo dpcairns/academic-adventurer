@@ -3,7 +3,6 @@
 import { getFromLocalStorage } from '../1-user-info/userUtils.js';
 // initialize state
 const userAdventureStats = getFromLocalStorage('USER');
-console.log('hello from certificate js');
 
 if (userAdventureStats.completed < 5) {
     alert('Sorry! Please complete all Adventure Journals first.');
