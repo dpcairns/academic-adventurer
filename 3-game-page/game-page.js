@@ -15,7 +15,7 @@ const findLetter = document.getElementById('find-letter-prompt');
 const letterStuff = adventureData.letterChoices;
 
 backButton.addEventListener('click', () => {
-    window.location = '/2-choose-adventure';
+    window.location = '../2-choose-adventure';
 });
 main.append(sectionElement);
 
