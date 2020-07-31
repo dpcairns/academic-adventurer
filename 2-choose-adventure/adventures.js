@@ -7,6 +7,8 @@ import { getFromLocalStorage } from '../1-user-info/userUtils.js';
 const main = document.querySelector('main');
 const localStorage = getFromLocalStorage('USER');
 const completedStorage = localStorage.completed;
+const audio = document.getElementById('audio');
+audio.src = '../assets/audio-files/Click book choose adventure 2.mp3';
 
 for (let i = 0; i < adventureData.length; i++) {
     const adventure = adventureData[i];
