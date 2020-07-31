@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 
 import { getFromLocalStorage } from '../1-user-info/userUtils.js';
+
 // initialize state
 const userAdventureStats = getFromLocalStorage('USER');
 

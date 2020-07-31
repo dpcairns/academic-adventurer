@@ -3,6 +3,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: min-content;
+    height: min-content;
 }
 
 .letter-tiles {
@@ -17,7 +19,7 @@ main {
 }
 
 img {
-    width: 900px;
+    width: auto;
     height: 600px;
     z-index: 0;
 }
@@ -28,8 +30,7 @@ img {
     position: absolute;
     padding-bottom: 20px;
     top: 650px;
-    width: 900px;
-    max-height: 80vh;
+    width: 1050px;
 }
 
 #find-letter-prompt {
@@ -38,6 +39,7 @@ img {
 input {
     display: none;
 }
+
 input:checked + img {
     border: solid 5px black;
     border-radius: 5px;
