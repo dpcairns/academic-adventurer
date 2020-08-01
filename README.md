@@ -10,7 +10,7 @@ This app aims to teach young students the English language alphabet in a fun and
 ## The overall problem domain and how the project solves those problems
 Create a less stressful assessment environment for learners to assess their knowledge. 
 
-## Semantic versioning, beginning with version 1.0.0 and incremented as changes are made
+## Versions
 1.0.0 MVP
     - Create user account 
     - Play game with one random letter per adventure 
@@ -28,5 +28,5 @@ Create a less stressful assessment environment for learners to assess their know
 1.2.3
     - add audio instructions
 
-## A list of any libraries, frameworks, or packages that your application requires in order to properly function. If needed, provide instructions that the user may need to follow in order to get your application up and running on their own computer.
+## A list of any libraries, frameworks, or packages that your application requires in order to properly function.
 None
