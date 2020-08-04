@@ -1,3 +1,5 @@
+// well organized, clean code. nice!
+
 // import functions and grab DOM elements
 import { saveToLocalStorage, getFromLocalStorage } from '../1-user-info/userUtils.js';
 import adventuresData from '../Data/data.js';
