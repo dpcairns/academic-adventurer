@@ -10,7 +10,7 @@ const audio = document.getElementById('audio');
 
 
 if (userAdventureStats.completed.length < 5) {
-
+    // nice checking for edge cases!
     alert('Sorry! Please complete all Adventure Journals first.');
     window.location = '../2-choose-adventure/index.html';
 } else {
@@ -20,6 +20,7 @@ if (userAdventureStats.completed.length < 5) {
 
 
     p.classList.add('completed-letters');
+    // nice string templating
     p.textContent = `Congrats ${userAdventureStats.name}!`;
     audio.src = '../assets/audio-files/Certificate page message.mp3';
     const completedDiv = document.createElement('div');

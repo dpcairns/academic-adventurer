@@ -235,6 +235,7 @@ const adventure5 = {
         number: 4,
         image: '../assets/data-letters/X.png',
         description: 'The uppercase letter X. This is the 24th letter in the English alphabet!',
+        // if the only difference among these results is the word 'Awesome', etc., you could just store that word here instead
         result: 'Awesome job! You earned one S(tudy) Coin!',
         sCoin: 1,
     }, {

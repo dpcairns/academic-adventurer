@@ -21,11 +21,11 @@ backButton.addEventListener('click', () => {
 main.append(sectionElement);
 
 let gameRounds = 0;
+// seems weird that all this function does is call another function with the same argument...
 function gamePlay(letterStuff) {
-    const letter = getRandomLetter(letterStuff);
-
-    return letter;
+    return getRandomLetter(letterStuff);
 }
+
 //set event listeners to update state and DOM
 
 let letters = gamePlay(letterStuff);
@@ -36,6 +36,7 @@ description.textContent = correctDescription;
 findLetter.textContent = `Find the letter ${correctLetter}`;
 audio.src = '../assets/audio-files/' + letters.audio;
 let letterIndex = findLetterIndex(letterStuff, correctLetter);
+// nice way to derive state from another piece of data
 const numberOfRounds = adventureData.letterChoices.length;
 
 radioTags.forEach((radioTag) => {

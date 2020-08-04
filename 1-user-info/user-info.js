@@ -10,6 +10,7 @@ form.addEventListener('submit', (event) => {
 
     const formData = new FormData(form);
 
+    // nice util
     const newUser = makeUser(formData);
 
     saveToLocalStorage('USER', newUser);

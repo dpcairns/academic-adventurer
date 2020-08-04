@@ -10,21 +10,19 @@ const completedStorage = localStorage.completed;
 const audio = document.getElementById('audio');
 audio.src = '../assets/audio-files/Click book choose adventure 2.mp3';
 
+// cool derived state! but you probably could have done this outside the for loop. otherwise, you'll do it multiple times on page load for no reason
+if (completedStorage.length === adventureData.length) {
+    window.location = '../5-certificate-page/index.html';
+}
+    
 for (let i = 0; i < adventureData.length; i++) {
     const adventure = adventureData[i];
+    // would probably work as a ternery like so
+    const toAppend = completedStorage[i] === adventure.id 
+        ? completedAdventure(adventure) 
+        : renderAdventure(adventure);
 
-    if (completedStorage.length === adventureData.length) {
-        window.location = '../5-certificate-page/index.html';
-
-    } else if (completedStorage[i] === adventure.id) {
-        const completedElement = completedAdventure(adventure);
-
-        main.appendChild(completedElement);
-    } else {
-        const element = renderAdventure(adventure);
-
-        main.appendChild(element);
-    }
+    main.appendChild(toAppend);
 }
 
 

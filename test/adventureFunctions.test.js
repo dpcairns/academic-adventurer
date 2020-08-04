@@ -5,6 +5,7 @@ import { findById, renderLetters } from '../3-game-page/game-page-utils.js';
 
 const test = QUnit.test;
 
+// nice thorough testing--and good idea to copy rather than import this data for the test. You don't want changes to data values to break your tests, unless the property names change
 const adventure1 = {
     id: 'adventure1',
     title: 'Adventure 1',
